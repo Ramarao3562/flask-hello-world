@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/Ramarao3562/flask-hello-world.git'
+                git branch: 'main', url: 'https://github.com/Ramarao3562/flask-hello-world.git'
+
             }
         }
         stage('Install Dependencies') {
